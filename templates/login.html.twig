@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Login {% endblock %}
+
+{% block css %} 
+
+{% endblock %}
+
+{% block body %}
+{% include 'menuusuario.html.twig' %}
+        <div class="contenedor" style="background:url(imagenes/login.jpg) no-repeat center center; background-size: cover; ">
+            <div class="container">
+            <div class="row justify-content-center align-items-center" style="min-height:100vh;">
+                <div class="col-md-2 d-none d-md-block"></div>
+                <div class="col-md-8 d-none d-md-block">
+
+
+                <div class="formLogin text-white text-center px-5"style="background:rgba(205,205,205,.4); ">
+
+                    <form class="form-signin text-center" method="post" >
+                       
+                        <h1 class="display-5 font-weight-bold ">Iniciar sesion</h1>
+                        {% if error %}
+
+                            <div class="alert alert-danger" role="alert">
+                                {{ error.messageKey|trans(error.messageData, 'security') }}
+                            </div>
+                        {% endif %}
+                        <div class="input-group input-group-sm flex-nowrap  mb-3">
+                            <div class="input-group-prepend" >
+                         
+                            <img src="https://img.icons8.com/ios/50/000000/important-mail.png">
+                            </div>
+                            <input type="email"  value="{{ last_username }}" name="email"  class="form-control small ml-3 mt-2" placeholder="Correo Electronico" aria-label="Correo Electronico" aria-describedby="icono-email"  style="font-size:14px; width:50px;" >
+                        </div>
+
+                        <div class="input-group input-group-sm flex-nowrap ">
+                            <div class="input-group-prepend">
+                            
+                            <img src="https://img.icons8.com/material/50/000000/password1--v1.png">
+                            </div>
+                            
+                            <input type="password" id="password" name="password" class="form-control small ml-3 mt-2" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="icono-password" style="font-size:14px;" required autofocus>
+                            
+                        
+                                           
+                       </div>
+                      
+                            <div class="container mb-3">
+                              <div class="row">
+                                  <div class="col-md-6"><input type="checkbox" name="check_mostrar" onclick='handleClick(this);'/> Mostrar contraseña</div>
+                                  <div class="col-md-6"><a href="{{ path('recuperar') }}" class="text-white text-decoration-none">¿Olvidaste tu contrseña?</a></div>
+                              </div>
+                          </div>
+                       
+                        <!-- <input type="hidden" name="_target_path" value="/cargando"/> -->
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}" >
+
+                        <button class="btn btn-lg btn  btnLogin alt-bg-default text-center" style="background: black;"type="submit">Ingresar</button>
+                    
+                    </form>
+                    <hr>
+                    <p>¿No tienes cuenta?</p>
+                    <a  class="btn btn-lg btn  btnLogin alt-bg-default text-center" href="{{ path('registro') }}" style="background: black;">Registraste aqui</a>
+                </div>
+                
+            </div>
+            
+                <div class="col-md-2"></div>
+            </div>
+            
+        </div>
+        </div>
+        {% endblock %}
+
+{% block js %}
+
+
+    
+{% endblock %} 

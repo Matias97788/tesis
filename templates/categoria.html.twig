@@ -1,0 +1,166 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Categorias {% endblock %}
+
+{% block css %} 
+
+{% endblock %}
+
+{% block body %}
+{% include 'menuusuario.html.twig' %}
+
+<section id="team">
+  <div class="container text-center" >
+    <div class="row mb-5 ">
+      <div class="col">
+        <h1>Categorias</h1>
+        
+        
+      </div>
+    </div>
+    <div class="row justify-content-center">
+
+      <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5">
+        <div class="card" style="height: 250px;">
+          <div class="card-boby">
+            <img src="../imagenes/tramites.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+            <p id="parrafo">Tramites legales</p>            
+              <div class="row justify-content-center">
+                <div class="p-4" id="parrafo">
+                  <a id="btnver" href="{{ path('tramites') }}" class="btn "> 
+                   ver
+                  </a>
+                </div>
+                 
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5">
+        <div class="card" style="height: 250px;">
+          <div class="card-boby">
+            <img src="../imagenes/funerarias.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+            <p id="parrafo">Funerarias</p>
+            <div class="row justify-content-center">
+                <div class="p-4" id="parrafo">
+                  <a id="btnver" href="{{ path('funerarias') }}" class="btn "> 
+                 </i> ver
+                  </a>
+                </div>
+                 
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5">
+        <div class="card" style="height: 250px;">
+          <div class="card-boby">
+            <img src="../imagenes/floreria.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+            <p id="parrafo">Florerias</p>
+            <div class="row justify-content-center">
+                <div class="p-4" id="parrafo">
+                  <a id="btnver" href="{{ path('florerias') }}" class="btn"> 
+                  </i> ver
+                  </a>
+                </div>
+                 
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5">
+        <div class="card" style="height: 250px;">
+          <div class="card-boby">
+            <img src="../imagenes/cementerio.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+            <p id="parrafo">Cementerios</p>
+            <div class="row justify-content-center">
+                <div class="p-4" id="parrafo">
+                  <a id="btnver" href="{{ path('cementerios') }}" class="btn"> 
+                  </i> ver
+                  </a>
+                </div> 
+
+              </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5">
+        <div class="card" style="height: 250px;">
+          <div class="card-boby">
+            <img src="../imagenes/parque.png" alt="Responsive image" class="img-fluid rounded-circle w-50 mb-3">
+            <p id="parrafo">Parques del recuerdo</p>
+            <div class="row justify-content-center">
+                <div class="p-4" id="parrafo">
+                  <a id="btnver" href="{{ path('parques') }}" class="btn"> 
+                  </i> ver
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5">
+        <div class="card" style="height: 250px;">
+          <div class="card-boby">
+            <img src="../imagenes/crematorio.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+            <p id="parrafo">Crematorios</p>
+            <div class="row justify-content-center">
+                <div class="p-4" id="parrafo">
+                  <a id="btnver" href="{{ path('crematorios') }}" class="btn"> 
+                 </i> ver
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5">
+        <div class="card" style="height: 250px;">
+          <div class="card-boby">
+            <img src="../imagenes/otros.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
+            <p id="parrafo">Servicios adicionales</p>
+            <div class="row justify-content-center">
+                <div class="p-4" id="parrafo">
+                  <a id="btnver" href="{{ path('otros') }}" class="btn "> 
+                 </i> ver
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5">
+        <div class="card"style="height: 250px;">
+          <div class="card-boby">
+            <img src="../imagenes/obituario.png" alt="" class="img-fluid rounded-circle w-50 mb-3" >
+            <p id="parrafo">Obituarios</p>
+            <div class="row justify-content-center">
+                <div class="p-4" id="parrafo">
+                  <a id="btnver" href="{{ path('obituarios') }}" class="btn "> 
+                  </i> ver
+                  </a>
+                </div>
+                 
+              </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  
+  </section>
+{% include 'footer.html.twig' %}
+{% endblock %}
+
+{% block js %}
+	
+{% endblock %}

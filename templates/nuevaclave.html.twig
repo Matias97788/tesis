@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Nueva clave {% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block body %}
+<br>
+
+  <div class="container">
+<!-- Large input -->
+<input class="form-control form-control-lg" type="text" placeholder="ingrese su clave">
+<input class="form-control form-control-lg" type="text" placeholder="Reingrese su clave">
+
+
+<a href="{{ path('app_login') }}" class=" text-decoration-none">enviar</a>
+
+
+  </div>
+
+
+  {% endblock %}
+
+  {% block js %}
+
+  {% endblock %}

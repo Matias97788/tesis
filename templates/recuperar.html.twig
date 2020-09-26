@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Recuperar clave {% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block body %}
+{% include 'menuusuario.html.twig' %}
+<br>
+
+  <div class="container">
+
+
+  
+<!-- Default form login -->
+<form class="text-center border border-light p-5" method="GET" action="{{ path('numero') }}">
+
+    <p class="h4 mb-4">Recuperar clave</p>
+
+    <!-- Email -->
+    <input type="email" class="form-control mb-4"  placeholder="ingrese su correo" name="correo">
+
+    <input type="submit" class=" text-decoration-none"></input>
+
+    
+
+</form>
+</div>
+{% include 'footer.html.twig' %}
+  {% endblock %}
+
+  {% block js %}
+
+  {% endblock %}

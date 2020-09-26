@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Direccion{% endblock %}
+
+{% block body %}
+    {% include 'menu.html.twig' %}
+<div class="container mt-5">
+<br>
+ <div class="row ">
+    <div class="col-md-12 text-center">
+    <h1>Crear nueva direccion</h1>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center"><a href="{{ path('direccion_index') }}" class="btn btn-primary">Volver</a></div>
+</div>
+
+    {{ include('direccion/_form.html.twig') }}
+
+ </div>
+</div>
+</div>
+{% include 'footer.html.twig' %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Otros{% endblock %}
+
+{% block body %}
+{% include 'menu.html.twig' %}
+<div class="container mt-5">
+<br>
+ <div class="row ">
+    <div class="col-md-12 text-center">
+    <h1>Crear nuevo servicio adicional</h1>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center"><a href="{{ path('direccion_index') }}" class="btn btn-primary">Volver</a></div>
+</div>
+
+    {{ include('otros/_form.html.twig') }}
+
+    
+</div>
+</div>
+</div>
+{% include 'footer.html.twig' %}
+{% endblock %}

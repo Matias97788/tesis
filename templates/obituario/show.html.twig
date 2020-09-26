@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Obituario{% endblock %}
+
+{% block body %}
+{% include 'menu.html.twig' %}
+  <div class="container mt-5">
+    <br>
+     <div class="row ">
+        <div class="col-md-12 text-center">
+    <h1>Obituario</h1>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center"><a href="{{ path('obituario_index') }}" class="btn btn-primary">Volver</a></div>
+  </div>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ obituario.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ obituario.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ obituario.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>FechaNacimiento</th>
+                <td>{{ obituario.fechaNacimiento }}</td>
+            </tr>
+            <tr>
+                <th>FechaMuerte</th>
+                <td>{{ obituario.fechaMuerte }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    {{ include('obituario/_delete_form.html.twig') }}
+    
+</div>    
+</div>
+</div>
+{% include 'footer.html.twig' %}
+{% endblock %}

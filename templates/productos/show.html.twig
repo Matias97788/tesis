@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Productos{% endblock %}
+
+{% block body %}
+    {% include 'menu.html.twig' %}
+<div class="container mt-5">
+    <br>
+     <div class="row ">
+        <div class="col-md-12 ">
+    <h1>Productos</h1>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center"><a href="{{ path('tramites_index') }}" class="btn btn-primary">Volver</a></div>
+  </div>
+
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ producto.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ producto.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ producto.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Brochurefilename</th>
+                <td>{{ producto.brochurefilename }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    {{ include('productos/_delete_form.html.twig') }}
+
+
+    
+</div>    
+</div>
+</div>
+{% include 'footer.html.twig' %}
+    
+{% endblock %}
+

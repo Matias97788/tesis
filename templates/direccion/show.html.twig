@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Direccion{% endblock %}
+
+{% block body %}
+    {% include 'menu.html.twig' %}
+    <div class="container mt-5">
+    <br>
+     <div class="row ">
+        <div class="col-md-12 text-center">
+    <h1>Direcciones</h1>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center"><a href="{{ path('direccion_index') }}" class="btn btn-primary">Volver</a></div>
+  </div>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ direccion.id }}</td>
+            </tr>
+            <tr>
+                <th>Calle</th>
+                <td>{{ direccion.calle }}</td>
+            </tr>
+            <tr>
+                <th>Numero</th>
+                <td>{{ direccion.numero }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    {{ include('direccion/_delete_form.html.twig') }}
+    
+    </div>    
+</div>
+</div>
+{% include 'footer.html.twig' %}
+{% endblock %}

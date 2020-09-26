@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tramites{% endblock %}
+
+{% block body %}
+{% include 'menu.html.twig' %}
+<div class="container mt-5">
+    <br>
+     <div class="row ">
+        <div class="col-md-12 ">
+    <h1>Tramites</h1>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center"><a href="{{ path('tramites_index') }}" class="btn btn-primary">Volver</a></div>
+  </div>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ tramite.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ tramite.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ tramite.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Link</th>
+                <td>{{ tramite.link }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    {{ include('tramites/_delete_form.html.twig') }}
+
+    
+</div>    
+</div>
+</div>
+{% include 'footer.html.twig' %}
+    
+{% endblock %}

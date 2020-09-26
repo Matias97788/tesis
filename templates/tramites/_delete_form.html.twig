@@ -1,0 +1,5 @@
+<form method="post" action="{{ path('tramites_delete', {'id': tramite.id}) }}" onsubmit="return confirm('¿Estas seguro que deseas elimnar este tramite?');">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ tramite.id) }}">
+    <button class="btn">Eliminar</button>
+</form>

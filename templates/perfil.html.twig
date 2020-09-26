@@ -1,0 +1,162 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Perfil {% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block body %}
+{% include 'menu.html.twig' %}
+
+<div class="perfil mt-5" >
+
+<br>
+
+
+
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-md-6 ">
+        <!-- Card -->
+        <!-- Card Dark -->
+        <div class="card" style="height:356px; width: 16rem;">
+
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="img-fluid" src="../imagenes/tramitesA.jpg" style="height:238px;">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body elegant-color white-text rounded-bottom text-center">
+
+            <a href="{{ path('tramites_index') }}" class="btn btn-primary text-center mt-3">Tramites</a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="col-lg-4 col-md-6 ">
+        <div class="card "style="height:356px; width: 16rem;" >
+
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="img-fluid" src="../imagenes/serviciosA.jpg" style="height:238px;">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body elegant-color white-text rounded-bottom text-center">
+
+            <a href="{{ path('servicio_index') }}" class="btn btn-primary text-center mt-3">Servicios</a>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6  ">
+        <div class="card"style="height:356px; width: 16rem;">
+
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="img-fluid" src="../imagenes/productoA.jpg" style="height:238px;">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body elegant-color white-text rounded-bottom text-center">
+
+            <a href="{{ path('productos_index') }}" class="btn btn-primary text-center mt-3">Productos</a>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 ">
+        <div class="card mt-3"style="height:356px; width: 16rem;">
+
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="img-fluid" src="../imagenes/obituarioA.jpg" style="height:238px;">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body elegant-color white-text rounded-bottom text-center">
+
+            <a href="{{ path('obituario_index') }}" class="btn btn-primary text-center mt-3">Obituarios</a>
+
+          </div>
+
+        </div>
+      </div>
+
+    <div class="col-lg-4 col-md-6  ">
+      <div class="card mt-2"style="height:356px; width: 16rem;">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="../imagenes/otros.png" style="height:238px;">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body elegant-color white-text rounded-bottom text-center">
+
+          <a href="{{ path('otros_index') }}" class="btn btn-primary text-center mt-3">Servicios adicionales</a>
+
+        </div>
+      </div>
+    </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card mt-2"style="height:356px; width: 16rem;">
+    
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="../imagenes/direccion.jpg" style="height:230px; width: 240px;">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+    
+            <!-- Card content -->
+            <div class="card-body elegant-color white-text rounded-bottom text-center">
+    
+              <a href="{{ path('direccion_index') }}" class="btn btn-primary text-center mt-3">Direcciones</a>
+    
+            </div>
+
+      </div>
+    </div>
+
+  
+
+</div>
+
+
+
+</div>
+</div>
+<br>
+</div>
+
+
+
+{% block js %}
+{% include 'footer.html.twig' %}
+{% endblock %}
+
+{% endblock %}

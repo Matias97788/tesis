@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}otros {% endblock %}
+
+{% block body %}
+{% include 'menuusuario.html.twig' %}
+
+<div class="container">
+  <h1>Servicios adicionales</h1>
+  <div class="row">
+    {% for otro in otros %}
+    <div class="col-md-12" style="background:rgba(205,205,205,.1); border: 1px solid; box-shadow:2px 5px">
+      <div class="row">
+        <div class="col-md-4 mt-3">
+          <img src="../imagenes/obituarioss.png" class="img-fluid" alt="Responsive image" style="height:266px;">
+        </div>
+        <div class="col-md-8 mt-3">
+          <h3 class="">{{ otro.nombre }}</h3>
+
+          <ul class="list-group">
+
+
+
+            <li class="list-group-item disabled mt-2">Correo: {{ otro.Correo }}</li>
+            <li class="list-group-item disabled mt-2">Telefono: {{ otro.Telefono }}</li>
+            <li class="list-group-item disabled mt-2">Descripcion de sus servicios: {{ otro.Descripcion }}</li>
+
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% include 'footer.html.twig' %}
+
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Crematorios {% endblock %}
+
+{% block body %}
+{% include 'menuusuario.html.twig' %}
+
+<div class="ml-5 mr-5">
+ <div class="ml-5 mr-5">
+      <h1 text-jutify-content-center>Crematorios</h1>
+      <div class="row" style="background:rgba(205,205,205,.1); border: 30px;">
+            {% for v in vista %}
+            <div class="col-md-4">
+                  <img src="{{ asset('uploads/brochures/' ~ v.brochureFilename) }}" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-8 mt-3">
+
+                  <ul class="list-group">
+                        <li class="list-group-item">Nombre del crematorio : {{v.nombre}}</li> <br>
+                  </ul>
+                  <ul class="list-group">
+                        <li class="list-group-item">correo : {{v.correo}}</li> <br>
+                  </ul> 
+                  <ul class="list-group">
+                        <li class="list-group-item">Horario : {{v.horarioAtencion}}</li> <br>
+                  </ul>    
+                  <ul class="list-group">
+                        <li class="list-group-item">Telefono : {{v.telefono}}</li> <br>
+                  </ul>                
+            
+               
+
+
+            </div>
+            {% endfor %}
+      </div>
+</div>
+      {% include 'footer.html.twig' %}
+
+{% endblock %}

@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Raleway',sans-serif;
+	height: auto;
+	width: 100%;
+}
+.carousel-inner img{
+	height: 500px;
+}
+
+.todo{
+	min-height: 100vh;
+}
+
+#team img{
+	margin-top: -50px;
+}
+#team i{
+font-size: 26px;
+color: #555;
+}
+
+#team p{
+	font-weight: 500;
+}
+#team.card{
+	border-radius: 0;
+	box-shadow: 5px 5px 15px #e74c3c;
+	transition: all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	
+}
+#team .card:hover{
+	background: #A7A4A4;
+	color: #3E3736;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 5px 5px 10px #9E9E9E;
+}
+#team .card:hover h3,#team .card:hover i{
+	color: #fff;
+	
+}
+#team {
+	
+	min-height: 100vh;
+	
+}
+#btnver{
+	background-color: #8f8d8d;
+	border-color: #000000;
+	width: 100px;
+	height: 50px;
+
+}
+h3{
+	font-size: 24px;
+	color:#333;
+	font-weight: bold;
+
+}
+#parrafo{
+	font-size: 25px;
+}
+
+#enviar{
+	background: #636161;
+	color:white
+}
+
+.perfil{
+	height: auto;
+}
+#btn{
+	background: #494949;
+	color:white;
+	width: 300px;
+}
+.contenedordos{
+	min-height: 100vh;
+}
+#contenedorinicio {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	min-height: 100vh;
+	
+}

@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Menu usurio {% endblock %}
+
+{% block css %} 
+
+{% endblock %}
+
+{% block body %}
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg deep-purple lighten-5 fixed-top">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+    
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="{{ path('app_login') }}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="{{ path('registro') }}">Registrarse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="{{ path('categoria') }}">Visitar</a>
+      </li>
+      
+      
+    
+
+        
+        
+      
+</ul>
+  </div>
+</nav>
+<!--/.Navbar -->
+
+
+
+
+
+         
+      
+    </form>
+  </div>
+</nav>
+
+{% endblock %}
+
+{% block js %}
+  
+{% endblock %}

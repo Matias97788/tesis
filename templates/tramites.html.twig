@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Tramites {% endblock %}
+
+{% block body %}
+{% include 'menuusuario.html.twig' %}
+
+
+<div class="ml-5 mr-5">
+      <h1 text-center>Tramites a realizar tras una defuncion</h1>
+      <div class="row" style="background:rgba(205,205,205,.1); border: 30px;">
+            {% for tramite in tramites %}
+            <div class="col-md-4">
+                  <img src="../imagenes/tramitesA.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-8 mt-3">
+
+                  <ul class="list-group">
+                        <li class="list-group-item">Nombre Tramites:{{ tramite.nombre }}</li> <br>
+                  </ul>
+                  <ul class="list-group">
+                        <li class="list-group-item">Descripción:{{ tramite.descripcion }}</li> <br>
+                  </ul>
+                  <ul class="list-group">
+                        <li class="list-group-item "><a href="{{ tramite.link }}"><input type="button" value="Ver"
+                                          class="btn btn-light" /></a></li> <br>
+                  </ul>
+
+
+            </div>
+            {% endfor %}
+      </div>
+</div>
+
+</team>
+
+
+
+{% include 'footer.html.twig' %}
+
+{% endblock %}

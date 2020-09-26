@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Productos{% endblock %}
+
+{% block body %}
+    {% include 'menu.html.twig' %}
+<div class="container mt-5">
+<br>
+ <div class="row ">
+    <div class="col-md-12 text-center">
+          <h1>Crear nuevo Producto</h1>
+<div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center"><a href="{{ path('productos_index') }}" class="btn btn-primary">Volver</a></div>
+</div>
+
+    {{ include('productos/_form.html.twig') }}
+</div>    
+ </div>
+</div>
+{% include 'footer.html.twig' %}
+{% endblock %}
